@@ -1,0 +1,37 @@
+/* Universal Style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* For Body */
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-poppins);
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Default Button aisa hoga */
+button {
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Normal img */
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+}

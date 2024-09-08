@@ -1,0 +1,269 @@
+/* Colors And Families Jo reuse horhi h */
+:root {
+    --clr-blue: #1A91F0;
+    --clr-blue-mid: #1170CD;
+    --clr-blue-dark: #1A1C6A;
+    --clr-white: #fff;
+    --clr-bright: #EFF2F9;
+    --clr-dark: #1e2532;
+    --clr-black: #000;
+    --clr-grey: #656e83;
+    --clr-green: #084C41;
+    --clr-white: #fff;
+    --clr-blue-mid: #007bff;
+    --clr-blue-light: #e7f0ff;
+    --clr-red: #ca0b00;
+    --clr-gray-light: #f8f9fa;
+    --clr-light-grey: #e9ecef;
+    --clr-primary: #007bff;
+    --clr-secondary: #f00;
+    --clr-light: #ffffff;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-manrope: 'Manrope', sans-serif;
+    --transition: 0.3s ease;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+/* Font Families */
+.font-poppins {
+    font-family: var(--font-poppins);
+}
+
+.font-manrope {
+    font-family: var(--font-manrope);
+}
+
+/* Text Colors */
+.text-blue {
+    color: var(--clr-blue);
+}
+
+.text-blue-mid {
+    color: var(--clr-blue-mid);
+}
+
+.text-blue-dark {
+    color: var(--clr-blue-dark);
+}
+
+.text-bright {
+    color: var(--clr-bright);
+}
+
+.text-dark {
+    color: var(--clr-dark);
+}
+
+.text-grey {
+    color: var(--clr-grey);
+}
+
+.text-white {
+    color: var(--clr-white);
+}
+
+/* Background Colors */
+.bg-blue {
+    background-color: var(--clr-blue);
+}
+
+.bg-blue-mid {
+    background-color: var(--clr-blue-mid);
+}
+
+.bg-blue-dark {
+    background-color: var(--clr-blue-dark);
+}
+
+.bg-bright {
+    background-color: var(--clr-bright);
+}
+
+.bg-dark {
+    background-color: var(--clr-dark);
+}
+
+.bg-grey {
+    background-color: var(--clr-grey);
+}
+
+.bg-white {
+    background-color: var(--clr-white);
+}
+
+.bg-black {
+    background-color: var(--clr-black);
+}
+
+.bg-green {
+    background-color: var(--clr-green);
+}
+
+/* Text Aligns */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text {
+    color: var(--clr-dark);
+    opacity: 0.9;
+    margin: 2rem 0;
+    line-height: 1.6;
+}
+
+/* Font Weight */
+.fw-2 {
+    font-weight: 200;
+}
+
+.fw-3 {
+    font-weight: 300;
+}
+
+.fw-4 {
+    font-weight: 400;
+}
+
+.fw-5 {
+    font-weight: 500;
+}
+
+.fw-6 {
+    font-weight: 600;
+}
+
+.fw-7 {
+    font-weight: 700;
+}
+
+.fw-8 {
+    font-weight: 800;
+}
+
+/* Font Size */
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-19 {
+    font-size: 19px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-21 {
+    font-size: 21px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-23 {
+    font-size: 23px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+/* Letter Spacing */
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+/* Buttons */
+.btn {
+    font-size: 14.5px;
+    font-weight: 600;
+    padding: 1.4rem 1.6rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-blue);
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--clr-dark);
+    border-color: var(--clr-grey);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--clr-dark);
+    border: 1px solid var(--clr-grey);
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    border-color: var(--clr-blue);
+}
+
+.btn-group button:first-child,
+.btn-group a:first-child {
+    margin-right: 1rem !important;
+}

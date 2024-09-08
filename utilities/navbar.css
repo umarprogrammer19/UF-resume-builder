@@ -1,0 +1,75 @@
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 8px;
+}
+
+.navbar .container {
+    width: 100%;
+}
+
+/* Nav logo */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+}
+
+.navbar-brand-text {
+    color: var(--clr-dark);
+    font-weight: 600;
+}
+
+.navbar-brand-text span {
+    color: var(--clr-blue);
+}
+
+.navbar-brand-icon {
+    width: 25px;
+    margin-right: 6px;
+    opacity: 0.8;
+}
+
+.brand-and-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar Right icons */
+
+.social-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icon.github {
+    color: #333;
+}
+
+.social-icon.linkedin {
+    color: #0077b5;
+}
+
+.social-icon.instagram {
+    color: #e1306c;
+}
+
+.social-icon.facebook {
+    color: #1877f2;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+/* Icons Ka size small kardya 500 screen size pr because or of mobile screens */
+@media (max-width: 500px) {
+    .social-icon {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+}
