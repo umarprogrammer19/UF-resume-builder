@@ -66,7 +66,8 @@ textarea {
 
 .form-control:focus {
     border-color: var(--clr-blue-mid);
-    box-shadow: 0 0 0 0.5rem rgba(38, 143, 255, 0.25); /* Add Shade */
+    box-shadow: 0 0 0 0.5rem rgba(38, 143, 255, 0.25);
+    /* Add Shade */
 }
 
 /* Form error text */
@@ -126,34 +127,36 @@ textarea {
 }
 
 .repeater-remove-btn:hover {
-    background-color: #b02400; /* Darker red on hover */
+    background-color: #b02400;
+    /* Darker red on hover */
 }
 
 /* Cv Create Section Style */
 .preview-cnt {
     border-radius: 5px;
     display: grid;
-    grid-template-columns: 32% auto;
+    grid-template-columns: 1fr;
+    /* Default to single column layout */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     overflow: hidden;
     margin: 30px 0;
 }
 
+
 .preview-cnt-l {
-    padding: 3rem 3rem 2rem 3rem;
+    padding: 3rem;
     background-color: var(--clr-blue-dark);
     color: var(--clr-white);
 }
 
-.preview-cnt-r {
-    padding: 3rem 3rem 3rem 4rem;
-    background-color: var(--clr-bright);
-    color: var(--clr-dark);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
-}
-
 .preview-cnt-l .preview-blk:nth-child(1) {
     text-align: center;
+}
+
+.preview-cnt-r {
+    padding: 3rem 4rem;
+    background-color: var(--clr-bright);
+    color: var(--clr-dark);
 }
 
 .preview-image {
@@ -161,8 +164,7 @@ textarea {
     height: 120px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
 
 .preview-image img {
@@ -341,3 +343,64 @@ textarea {
     }
 }
 
+/* For Larger Screens */
+@media (min-width: 768px) {
+    .preview-cnt {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+/* For Extra Large Screens */
+@media (min-width: 992px) {
+    .preview-cnt {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+/* For Smaller Screens */
+@media (max-width: 768px) {
+    .preview-cnt {
+        grid-template-columns: 1fr; 
+    }
+
+    .preview-cnt-l, .preview-cnt-r {
+        padding: 2rem;
+    }
+
+    .preview-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .preview-item-name {
+        font-size: 1.8rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .preview-cnt {
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .preview-cnt-l, .preview-cnt-r {
+        padding: 1rem;
+        box-shadow: none;
+    }
+
+    .preview-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .preview-item-name {
+        font-size: 1.6rem;
+    }
+
+    .preview-blk-title h3 {
+        font-size: 1.2rem;
+    }
+}
